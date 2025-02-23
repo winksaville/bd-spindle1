@@ -10,11 +10,13 @@ fn main() {
     let height = args[3].parse::<f64>().unwrap();
     let segments= args[4].parse::<usize>().unwrap();
 
-    // Create two shapes:
-    let inner_cylinder = CSG::cylinder(inner_radius, height, segments, None);  // 1 x 20 cylinder
-    let outer_cylinder = CSG::cylinder(outer_radius, height, segments, None);  // 1 x 20 cylinder
+    // Create two cylinders
+    let inner_cylinder = CSG::cylinder(inner_radius, height, segments, None);
+    let outer_cylinder = CSG::cylinder(outer_radius, height, segments, None);
 
-    // Difference one from the other:
+    // Difference between the two cylinders.
+    // The result will be the outer cylinder with a hole in the middle
+    // the size of the inner cylinder.
     let difference_result = outer_cylinder.difference(&inner_cylinder);
 
     // Write the result as an ASCII STL:
