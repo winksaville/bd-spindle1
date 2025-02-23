@@ -1,0 +1,16 @@
+[package]
+name = "cadx-csgrs-1"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["csgrs"]
+local = ["csgrs-local"]
+git = ["csgrs-git"]
+
+[dependencies]
+csgrs = { version = "0.15.2",  optional = true}
+csgrs-local = { package = "csgrs", path = "/home/wink/data/prgs/rust/forks/csgrs", optional = true}
+csgrs-git = { package = "csgrs", git = "https://github.com/winksaville/csgrs.git", optional = true}
+
+nalgebra = "0.33.2"
