@@ -1,8 +1,7 @@
 # Cad Experiment csgrs spindle 1
 
-Create a cylinder with a hollow center using `csgrs`. Eventaully
-this will turn in to a spindle for a prototype of a Braille Dot
-for a Braille Display.
+Create a spindle hollow center using `csgrs` a for a prototype of
+a Braille Dot to on a Braille Display.
 
 ```rust
 use std::env;
@@ -42,16 +41,16 @@ The Cargo.toml file has 3 ways to depend on `csgrs`:
 5 examples:
 
 ```
-wink@3900x 25-02-22T21:24:44.866Z:~/data/prgs/rust/myrepos/braille/cadx-csgrs-spindle1 (main)
-$ cargo run -- 1 1.45 20 40
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
-     Running `target/debug/cadx-csgrs-1 1 1.45 20 40`
-wink@3900x 25-02-22T21:25:02.735Z:~/data/prgs/rust/myrepos/braille/cadx-csgrs-spindle1 (main)
-$ f3d cylinder_inner1.00_outer1.45_height20.00_segments40.stl --output cylinder_inner1.00_outer1.45_height20.00_segments40.stl.png
-wink@3900x 25-02-22T21:25:18.850Z:~/data/prgs/rust/myrepos/braille/cadx-csgrs-spindle1 (main)
-$ 
+wink@3900x 25-02-24T23:15:44.488Z:~/data/prgs/rust/myrepos/braille/cadx-csgrs-spindle1 (main)
+$ cargo run -- 0.5 0.75 20 40
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+     Running `target/debug/cadx-csgrs-1 0.5 0.75 20 40`
+wink@3900x 25-02-24T23:16:13.239Z:~/data/prgs/rust/myrepos/braille/cadx-csgrs-spindle1 (main)
+$ f3d spindle.inner0.50_outer0.75_height20.00_segments40.stl --output spindle.inner0.50_outer0.75_height20.00_segments40.stl.png
+wink@3900x 25-02-24T23:16:24.928Z:~/data/prgs/rust/myrepos/braille/cadx-csgrs-spindle1 (main)
 ```
-![cargo run -- 1 1.45 20 40](./cylinder_inner1.00_outer1.45_height20.00_segments40.stl.png)
+
+![cargo run -- 0.5 0.57 20 40 png file](./spindle.inner0.50_outer0.75_height20.00_segments40.stl.png)
 
 ## License
 

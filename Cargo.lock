@@ -178,9 +178,9 @@ checksum = "8f1fe948ff07f4bd06c30984e69f5b4899c516a3ef74f34df92a2df2ab535495"
 name = "cadx-csgrs-1"
 version = "0.1.0"
 dependencies = [
- "csgrs 0.15.2",
  "csgrs 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "csgrs 0.15.2 (git+https://github.com/winksaville/csgrs.git)",
+ "csgrs 0.16.0",
  "nalgebra",
 ]
 
@@ -357,28 +357,6 @@ checksum = "43da5946c66ffcc7745f48db692ffbb10a83bfe0afd96235c5c2a4fb23994929"
 [[package]]
 name = "csgrs"
 version = "0.15.2"
-dependencies = [
- "cavalier_contours",
- "chull",
- "contour_tracing",
- "core2",
- "dxf",
- "earclip",
- "earcut",
- "fast-surface-nets",
- "hashbrown 0.15.2",
- "hershey",
- "image",
- "meshtext",
- "nalgebra",
- "parry3d-f64",
- "rapier3d-f64",
- "stl_io",
-]
-
-[[package]]
-name = "csgrs"
-version = "0.15.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e9736221745eec5a37037a91631feab36475cb5497267799db095d480963f9bb"
 dependencies = [
@@ -402,6 +380,28 @@ dependencies = [
 name = "csgrs"
 version = "0.15.2"
 source = "git+https://github.com/winksaville/csgrs.git#c4311fd8ea23f17faed7db78c59cd648be7a3fa4"
+dependencies = [
+ "cavalier_contours",
+ "chull",
+ "contour_tracing",
+ "core2",
+ "dxf",
+ "earclip",
+ "earcut",
+ "fast-surface-nets",
+ "hashbrown 0.15.2",
+ "hershey",
+ "image",
+ "meshtext",
+ "nalgebra",
+ "parry3d-f64",
+ "rapier3d-f64",
+ "stl_io",
+]
+
+[[package]]
+name = "csgrs"
+version = "0.16.0"
 dependencies = [
  "cavalier_contours",
  "chull",
