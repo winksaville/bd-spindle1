@@ -1,8 +1,10 @@
 [package]
-name = "cadx-csgrs-1"
+name = "bd-spindle1"
 version = "0.1.0"
 edition = "2021"
 
+# Using --features csgrs-local will use the csgrs crate in the local directory
+# Using --features csgrs-git will use the csgrs crate from github
 [features]
 default = ["csgrs"]
 local = ["csgrs-local"]
